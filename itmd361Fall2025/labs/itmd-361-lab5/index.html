@@ -5,35 +5,52 @@
     <title>Exploring HTML forms</title>
 </head>
 <body>
-  <h2>Volenteer Form</h2>
+  <h2>Volunteer Form</h2>
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
     <fieldset>
-      <legend>My Info:</legend>
+      <legend>My Info</legend>
       <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname" ><br>
+      <input type="text" id="fname" name="first_name_field"><br>
       <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname" ><br>
-      <label for="phone">Phone number:</label>
-      <input type="text" id="phone" name="phone"><br>
+      <input type="text" id="lname" name="last_name_field"><br>
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone_field"><br>
       <label for="email">Email:</label>
-      <input type="text" id="email" name="email"><br>
-      <label for="gender">Gender:</label><br>
+      <input type="text" id="email" name="email_field"><br>
+      <label>Gender:</label><br>
       <label for="male">Male</label>
-      <input type="radio" id="male" name="gender" value="male">        
+      <input type="radio" id="male" name="gender_field" value="male">
       <label for="female">Female</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <!--
-      <label for="other">Non-binary</label>
-      <input type="radio" id="non-binary" name="gender" value="non-binary">
-      <label for="other">Other</label>
-      <input type="radio" id="other" name="gender" value="other"><br>
-      -->
-      <input type="submit" value="Submit Query">
+      <input type="radio" id="female" name="gender_field" value="female"><br>
+      <label for="age">Age:</label><br>
+      <select id="age" name="age_field">
+        <option value="under 18">under 18</option>
+        <option value="over 18">over 18</option>
+      </select>
     </fieldset>
     <fieldset>
-    <legend>My Availability</legend>
-      All code for the fields under “My Availability”
+      <legend>My Availability</legend>
+      <h3>Days Available:</h3>
+      <label for="sunday">Sunday</label>
+      <input type="checkbox" id="sunday" name="available_field[]" value="Sunday"><br>
+      <label for="monday">Monday</label>
+      <input type="checkbox" id="monday" name="available_field[]" value="Monday"><br>
+      <label for="tuesday">Tuesday</label>
+      <input type="checkbox" id="tuesday" name="available_field[]" value="Tuesday"><br>
+      <label for="wednesday">Wednesday</label>
+      <input type="checkbox" id="wednesday" name="available_field[]" value="Wednesday"><br>
+      <label for="thursday">Thursday</label>
+      <input type="checkbox" id="thursday" name="available_field[]" value="Thursday"><br>
+      <label for="friday">Friday</label>
+      <input type="checkbox" id="friday" name="available_field[]" value="Friday"><br>
+      <label for="saturday">Saturday</label>
+      <input type="checkbox" id="saturday" name="available_field[]" value="Saturday"><br>
+      <h3>Comments</h3>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments_field"></textarea>
     </fieldset>
+    <input type="hidden" name="hidden_field" value="YOUR NAME HERE">
+    <input type="submit" value="Submit Query">
   </form>
 </body>
 </html>
