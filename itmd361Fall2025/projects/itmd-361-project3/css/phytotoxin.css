@@ -1,0 +1,162 @@
+/* Navigation (same on every page) */
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #333;
+}
+
+
+#main-nav ul li {
+  display: inline-block;
+}
+
+
+#main-nav ul li a {
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+
+#main-nav ul li a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+
+/* Style 1: Page background, font and text color */
+body {
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #eef2ea;
+  color: #222;
+}
+
+
+/* Style 2: Main heading banner (phone size first) */
+h1 {
+  margin: 0;
+  padding: 0.8em 0.5em;
+  text-align: center;
+  font-size: 1.8em;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #2e5e3a;
+}
+
+
+/* Style 3: Main content box (fluid layout, uses % and em) */
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style 4: Intro paragraph */
+#intro {
+  padding-left: 1em;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  border-left: 5px solid #2e5e3a;
+}
+
+
+/* Style 5: Plant list (no bullets) */
+#plant-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+/* Style 6: Each plant box */
+#plant-list li {
+  margin-bottom: 1.5em;
+  padding: 1em 1.5em;
+  background-color: #f4f8f1;
+  border: 1px solid #b7c9b0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+/* Style 7: Plant names */
+#plant-list h2 {
+  margin-top: 0;
+  padding-bottom: 0.2em;
+  color: #2e5e3a;
+  border-bottom: 2px solid #2e5e3a;
+}
+
+
+/* Style 8: Plant pictures (centered on phones) */
+#plant-list img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 1em auto;
+  border: 3px solid #2e5e3a;
+  border-radius: 8px;
+}
+
+
+/* Style 9: Plant descriptions */
+#plant-list p {
+  margin: 0.6em 0;
+  line-height: 1.6em;
+}
+
+
+/* Style 10: Colored stripe on the left of each plant box */
+li#foxglove {
+  border-left: 8px solid #b565a7;
+}
+
+li#oleander {
+  border-left: 8px solid #d6336c;
+}
+
+li#brugmansia {
+  border-left: 8px solid #f0a07c;
+}
+
+li#nightshade {
+  border-left: 8px solid #5b2a86;
+}
+
+
+/* Style 11: Bold text */
+strong {
+  color: #7a1f1f;
+}
+
+
+/* Style 12: Bigger screens (min-width: 600px) */
+@media (min-width: 600px) {
+  h1 {
+    padding: 1em 0.5em;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+  }
+
+  main {
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em 2em;
+  }
+
+  #plant-list img {
+    float: left;
+    width: 30%;
+    max-width: 250px;
+    margin: 0 1.5em 1em 0;
+  }
+}

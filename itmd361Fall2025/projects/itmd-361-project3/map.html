@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="phytotoxin.html">Favorite Plants</a></li>
+          <li><a href="map.html">Map</a></li>
+        </ul>
+      </nav>
+      <h1>Map</h1>
+    </header>
+    <main>
+      <p id="map-intro">This map shows my school, IIT, along with two Chicago conservatories where you can see plants from all over the world. Click a marker to learn more, or click anywhere on the map to drop your own marker.</p>
+      <div id="map"></div>
+      <button type="button" id="questions-btn">Questions</button>
+    </main>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
+  </body>
+</html>
